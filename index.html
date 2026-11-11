@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#142323">
   <meta name="description" content="Barrio Libre es un juego independiente de mundo abierto ambientado en una ciudad costera. Sigue su desarrollo.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barrio Libre — Una vida nueva junto al mar">
+  <meta property="og:description" content="Un mundo abierto de costa, vecinos y segundas oportunidades. Sigue el desarrollo de Barrio Libre, de PVBLO Estudios.">
+  <meta property="og:image" content="https://trex69761-design.github.io/barrio-libre-web/ciudad.png">
+  <meta property="og:url" content="https://trex69761-design.github.io/barrio-libre-web/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
   <title>Barrio Libre — Una vida nueva junto al mar</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +22,8 @@
 <body>
   <header class="topbar">
     <a class="wordmark" href="#inicio" aria-label="Barrio Libre, inicio"><span class="mark">BL</span><span>BARRIO<br>LIBRE</span></a>
-    <nav aria-label="Navegación principal">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Navegación principal">
       <a href="#proyecto">El proyecto</a><a href="#barrios">El mundo</a><a href="#capturas">Capturas</a>
     </nav>
     <a class="status-pill" href="#estado"><i></i> EN DESARROLLO</a>
@@ -58,15 +67,18 @@
     <section class="gallery" id="capturas">
       <div class="gallery-heading"><div><div class="section-kicker">04 / ASÍ VA TOMANDO FORMA</div><h2>POSTALES DEL <em>DESARROLLO.</em></h2></div><p>Imágenes reales del proyecto mientras lo construimos.<br>El aspecto final puede cambiar.</p></div>
       <div class="gallery-grid">
-        <figure class="gallery-large"><img src="ciudad.png" alt="Calle de Barrio Libre, captura del desarrollo"><figcaption><span>01 — CALLES DE BARRIO LIBRE</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
-        <figure><img src="casa.png" alt="Casa del barrio, captura del desarrollo"><figcaption><span>02 — UN LUGAR PROPIO</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
-        <figure><img src="atraco.png" alt="Sistema de alerta en desarrollo"><figcaption><span>03 — SISTEMAS EN PRUEBAS</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
+        <figure class="gallery-large"><button class="image-open" type="button" aria-label="Ampliar captura: calles de Barrio Libre"><img src="ciudad.png" alt="Calle de Barrio Libre, captura del desarrollo"><span class="zoom-mark" aria-hidden="true">↗</span></button><figcaption><span>01 — CALLES DE BARRIO LIBRE</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
+        <figure><button class="image-open" type="button" aria-label="Ampliar captura: un lugar propio"><img src="casa.png" alt="Casa del barrio, captura del desarrollo"><span class="zoom-mark" aria-hidden="true">↗</span></button><figcaption><span>02 — UN LUGAR PROPIO</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
+        <figure><button class="image-open" type="button" aria-label="Ampliar captura: sistemas en pruebas"><img src="atraco.png" alt="Sistema de alerta en desarrollo"><span class="zoom-mark" aria-hidden="true">↗</span></button><figcaption><span>03 — SISTEMAS EN PRUEBAS</span><small>CAPTURA DE DESARROLLO</small></figcaption></figure>
       </div>
     </section>
 
     <section class="status section-wrap" id="estado"><div class="status-symbol">✳</div><div><div class="section-kicker">05 / AHORA MISMO</div><h2>EL BARRIO SIGUE<br><em>CRECIENDO.</em></h2></div><div class="status-copy"><p>Barrio Libre está en desarrollo activo. Primero, construir bien el juego; después, llevarlo a quienes quieran recorrerlo.</p><p>La idea es publicarlo como un juego completo de pago. <strong>Precio, fecha y plataformas están por anunciar.</strong> Si el proyecto empieza a generar ingresos, se reinvertirán en seguir mejorándolo.</p></div><div class="status-tag"><i></i> EN DESARROLLO<br><small>MÁS NOVEDADES PRÓXIMAMENTE</small></div></section>
   </main>
 
+  <dialog class="lightbox" aria-label="Captura ampliada"><button class="lightbox-close" type="button" aria-label="Cerrar imagen">×</button><img src="" alt=""><p></p></dialog>
+
   <footer><a class="wordmark" href="#inicio"><span class="mark">BL</span><span>BARRIO<br>LIBRE</span></a><p>Un proyecto independiente en construcción.<br>Hecho con cariño, junto al mar.</p><a class="back-top" href="#inicio">VOLVER ARRIBA ↑</a><small>© 2026 PVBLO ESTUDIOS · BARRIO LIBRE · CAPTURAS DE DESARROLLO</small></footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

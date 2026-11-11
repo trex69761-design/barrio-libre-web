@@ -1,21 +1,20 @@
 # Barrio Libre — web de presentación
 
-Web estática en español para presentar el desarrollo de **Barrio Libre**, bajo el nombre **PVBLO Estudios**. No necesita instalar programas, compilador ni servicios de pago.
+Web estática en español para presentar el desarrollo de **Barrio Libre**, bajo el nombre **PVBLO Estudios**. No necesita compilador, servicios de pago ni dependencias de JavaScript.
 
-## Verla en tu ordenador
+## Verla en local
 
-Abre `index.html` en un navegador. La web usa `ciudad.png`, `casa.png` y `atraco.png`, incluidos junto a la página.
+Abre `index.html` en un navegador. Las capturas, el icono y la tipografía de reserva se sirven desde esta carpeta. Google Fonts se usa como mejora progresiva; sin conexión, la web conserva tipografía de sistema.
 
-## Publicarla gratis con GitHub Pages
+## Publicación
 
-1. Crea una cuenta gratuita en GitHub, si todavía no tienes una.
-2. Crea un repositorio **público** llamado `barrio-libre-web`.
-3. Sube el contenido de esta carpeta (`index.html`, `styles.css`, `README.md`, `ciudad.png`, `casa.png` y `atraco.png`). Sube solo esta web: no incluyas el proyecto de Unreal ni archivos privados.
-4. En el repositorio, abre **Settings → Pages**. En **Build and deployment**, elige **Deploy from a branch**, selecciona `main` y la carpeta `/ (root)`, y guarda.
-5. GitHub mostrará una dirección gratuita parecida a `https://tu-usuario.github.io/barrio-libre-web/`.
+GitHub Pages sirve esta carpeta desde la rama `main`. Mantén aquí únicamente los archivos de la web; nunca incluyas el proyecto de Unreal ni sus datos privados.
 
-El nombre **PVBLO Estudios** ya aparece en el pie de página. Se puede cambiar el texto y las capturas editando `index.html` y reemplazando los tres archivos PNG de la raíz.
+## Accesibilidad e interacción
 
-## Antes de compartirla
+- Navegación móvil operable por teclado y tacto.
+- Galería ampliable con diálogo, cierre con Escape y foco gestionado por el navegador.
+- Animaciones desactivadas si el sistema pide movimiento reducido.
+- Metaetiquetas Open Graph para vistas previas al compartir el enlace.
 
-La página dice claramente que el juego está en desarrollo, que las imágenes son capturas actuales y que precio, fecha y plataformas están por anunciar. No enlaza a tiendas porque aún no hay páginas oficiales de Barrio Libre allí. Las fuentes tipográficas se cargan desde Google Fonts; si no hay conexión, la página usa fuentes de reserva.
+Las características del juego, su precio, fecha y plataformas pueden cambiar durante el desarrollo. Las imágenes son capturas actuales del proyecto.
