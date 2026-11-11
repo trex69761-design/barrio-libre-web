@@ -4,17 +4,17 @@ Web estática en español para presentar el desarrollo de **Barrio Libre**, bajo
 
 ## Verla en tu ordenador
 
-Abre `index.html` en un navegador. La web usa tres capturas incluidas en `assets/`.
+Abre `index.html` en un navegador. La web usa `ciudad.png`, `casa.png` y `atraco.png`, incluidos junto a la página.
 
 ## Publicarla gratis con GitHub Pages
 
 1. Crea una cuenta gratuita en GitHub, si todavía no tienes una.
 2. Crea un repositorio **público** llamado `barrio-libre-web`.
-3. Sube el contenido de esta carpeta (`index.html`, `styles.css`, `README.md` y `assets/`). Sube solo esta web: no incluyas el proyecto de Unreal ni archivos privados.
+3. Sube el contenido de esta carpeta (`index.html`, `styles.css`, `README.md`, `ciudad.png`, `casa.png` y `atraco.png`). Sube solo esta web: no incluyas el proyecto de Unreal ni archivos privados.
 4. En el repositorio, abre **Settings → Pages**. En **Build and deployment**, elige **Deploy from a branch**, selecciona `main` y la carpeta `/ (root)`, y guarda.
 5. GitHub mostrará una dirección gratuita parecida a `https://tu-usuario.github.io/barrio-libre-web/`.
 
-El nombre **PVBLO Estudios** ya aparece en el pie de página. Se puede cambiar el texto y las capturas editando `index.html` y los archivos de `assets/`.
+El nombre **PVBLO Estudios** ya aparece en el pie de página. Se puede cambiar el texto y las capturas editando `index.html` y reemplazando los tres archivos PNG de la raíz.
 
 ## Antes de compartirla
 
